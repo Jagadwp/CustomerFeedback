@@ -27,6 +27,8 @@ export const insert = (req, res) => {
         if (error) {
             console.error('Error inserting purchase:', error);
             res.status(500).json({ error: 'Internal Server Error' });
+        } else if (result.affectedRows === 0) {
+            res.status(404).json({ error: 'Entity not found' });
         } else {
             res.status(201).json({ purchaseId: result.insertId });
         }

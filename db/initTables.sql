@@ -25,10 +25,10 @@ CREATE TABLE purchases (
   FOREIGN KEY (salesperson_id) REFERENCES sales(id)
 );
 
-CREATE TABLE feedback (
+CREATE TABLE feedbacks (
   id INT AUTO_INCREMENT PRIMARY KEY,
   purchase_id INT,
-  qr_code VARCHAR(255),
+  qr_code LONGTEXT,
   star_rating INT,
   additional_feedback TEXT,
   FOREIGN KEY (purchase_id) REFERENCES purchases(id)

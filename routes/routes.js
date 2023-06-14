@@ -8,10 +8,15 @@ const router = Router();
 
 router.get('/customer', customerService.index);
 router.post('/customer', customerService.insert);
+
 router.get('/sales', salesService.index);
 router.post('/sales', salesService.insert);
+
 router.get('/purchase', purchaseService.index);
 router.post('/purchase', purchaseService.insert);
 router.put('/purchase/:purchase_id', purchaseService.update);
+
+router.get('/feedback', feedbackService.index);
+router.post('/feedback', feedbackService.insert);
 
 export default router;
