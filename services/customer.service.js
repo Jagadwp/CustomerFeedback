@@ -16,13 +16,7 @@ export const index = (req, res) => {
 
 export const insert = (req, res) => {
     const { name, address, email, phone } = req.body;
-
-    const customer = {
-        name,
-        address,
-        email,
-        phone
-    };
+    const customer = { name, address, email, phone };
 
     if (!name || !address) {
         return res.status(400).json({ error: 'Name and address are required fields' });
