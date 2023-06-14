@@ -1,10 +1,10 @@
 # Customer Feedback System
 
-# Technologies
-- MySql -> for document database
-- Express(.js) -> Node.js web framework
+## Technologies
+- MySQL -> for SQL database
+- Express.js -> Node.js framework
 
-# Installation
+## Installation
 1. add .env (example)<br>
 ```
 DB_HOST=<your-db-host>
@@ -14,9 +14,12 @@ DB_PASSWORD=<your-db-password>
 DB_NAME=<your-db-name>
 PORT=<your-app-port>
 ```
-2. npm install <br>
+2. Install the dependencies<br>
+```
+npm install
+```
 
-# Usage
+## Start the Application
 To start the app, you have two options:<br>
 1. Start the app in production mode:
 ```
@@ -27,6 +30,6 @@ npm start
 npm run dev
 ```
 
-# API Documentation
+## API Documentation Link
 https://documenter.getpostman.com/view/12534314/2s93sgV9j6
 
